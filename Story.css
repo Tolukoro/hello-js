@@ -1,0 +1,45 @@
+body{
+    background-color: white;
+    color: #242424;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+header{
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.body-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
