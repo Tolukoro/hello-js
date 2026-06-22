@@ -1,11 +1,16 @@
-const name = 'emma'
+const http = require('http');
 
-console.log(name)
+const server = http.createServer((req, res) => {
+    if (req.method === 'GET' && req.url === '/') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('Hello, World!');
+    } else {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('Not Found');
+    }
+});
 
-console.log('Hello, ' + name + '!')
-x = 24
-if (x <= 10) {
-    console.log(Stop);
-    x -=4
-}
-console.log(x)
+const PORT = 3000;
+server.listen(PORT, () => {
+    console.log(`server is running on http://localhost:${PORT}`);
+});
